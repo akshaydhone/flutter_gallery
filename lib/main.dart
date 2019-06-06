@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dataStore.dart';
 
 void main() => runApp(MyApp());
 class MainPage extends StatefulWidget{
@@ -14,6 +15,8 @@ class MainPage extends StatefulWidget{
 class MainPageState extends State<MainPage>{
   @override
   Widget build(BuildContext context) {
+
+    //var spacecrafts = ["AI","Pregnacy Test","Calving","Treatment","Vaccination","Operation","Sample Testing","Tag-Retag","Dehorning","Distokiya","Postmertem"];
 
 
 
@@ -48,7 +51,7 @@ List<Widget> _buildGridTiles(numberOfTiles)
     final  imageName=index < 9 ?
         'assets/i${index+1}.PNG' : 'assets/i${index+1}.PNG' ;
     return new Stack(
-      alignment: const Alignment(0.0, 1.8),
+      alignment: const Alignment(0.0, 1.85),
       children: <Widget>[
         new Container(
           child: new Image.asset(
@@ -62,8 +65,8 @@ List<Widget> _buildGridTiles(numberOfTiles)
         new Container(
           padding: const EdgeInsets.all(10.0),
 
-          child:new Text('${index}',style: new TextStyle(
-            fontSize: 18.0,
+          child:new Text(storeItems[index].itemName,style: new TextStyle(
+            fontSize: 17.5,
             fontWeight: FontWeight.bold,
             color: Colors.black,
           ),) ,
@@ -90,16 +93,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    final a7= Padding(
-      padding: EdgeInsets.symmetric(vertical: 5.0,horizontal: 10.0),
 
-      child: Text(
 
-        'Precautions',
-        style: TextStyle(fontSize: 23.0, color: Colors.black,fontWeight: FontWeight.bold),
-        textAlign: TextAlign.left,
-      ),
-    );
+
 
     return MaterialApp(
       title: 'Flutter Demo',
