@@ -18,7 +18,7 @@ List<Store> storeItems =[
 
   Store.items(
     itemName: "AI",
-    itemImage: "AI",
+    //itemImage: "lib/artificial_insemination.dart",
   ),
   Store.items(
     itemName: "Pregnancy",
