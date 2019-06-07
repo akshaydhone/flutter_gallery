@@ -99,8 +99,6 @@ var pages=[AIPage(),PDPage(),CalvingPage(),TreatmentPage(),VaccinationPage(),Ope
       children: <Widget>[
 
 
-
-
         new Container(
           child: new Image.asset(
             imageName,
@@ -111,7 +109,10 @@ var pages=[AIPage(),PDPage(),CalvingPage(),TreatmentPage(),VaccinationPage(),Ope
         ),
 
 
-        
+
+
+
+
         new Scaffold(
           body: ListView.builder(
             itemCount: imageName.length,
@@ -119,7 +120,11 @@ var pages=[AIPage(),PDPage(),CalvingPage(),TreatmentPage(),VaccinationPage(),Ope
 
               //var title;
               return ListTile(
-                //title: Text(imageName[index].trim()),
+                title: new Image.asset( 'assets/i${index+1}.PNG',
+                  width: 130.0,
+                  height: 130.0,
+                  fit: BoxFit.contain,
+                ),
                 // When a user taps on the ListTile, navigate to the DetailScreen.
                 // Notice that we're not only creating a DetailScreen, we're
                 // also passing the current todo through to it!
@@ -130,14 +135,26 @@ var pages=[AIPage(),PDPage(),CalvingPage(),TreatmentPage(),VaccinationPage(),Ope
 
                         builder: (context) => pages[index]
                     ),
+
+
+
+
                   );
+
                 },
+
+
               );
+
             },
+
+
+
+
           ),
 
-        ),
 
+        ),
 
 
 
