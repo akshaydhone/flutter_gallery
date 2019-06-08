@@ -45,9 +45,9 @@ class MainPageState extends State<MainPage>{
       ),
 
 
-      body: new GridView.extent(maxCrossAxisExtent: 120.0,
-        mainAxisSpacing: 22.0,
-        crossAxisSpacing: 20.0,
+      body: new GridView.extent(maxCrossAxisExtent: 130.0,
+        mainAxisSpacing: 16.5,
+        crossAxisSpacing: 16.5,
         padding: const EdgeInsets.all(5.0),
         children: _buildGridTiles(11),
 
@@ -99,14 +99,7 @@ var pages=[AIPage(),PDPage(),CalvingPage(),TreatmentPage(),VaccinationPage(),Ope
       children: <Widget>[
 
 
-        new Container(
-          child: new Image.asset(
-            imageName,
-            width: 130.0,
-            height: 130.0,
-            fit: BoxFit.cover,
-          ),
-        ),
+
 
 
 
@@ -122,7 +115,7 @@ var pages=[AIPage(),PDPage(),CalvingPage(),TreatmentPage(),VaccinationPage(),Ope
               return ListTile(
                 title: new Image.asset( 'assets/i${index+1}.PNG',
                   width: 130.0,
-                  height: 130.0,
+                  height: 150.0,
                   fit: BoxFit.contain,
                 ),
                 // When a user taps on the ListTile, navigate to the DetailScreen.
@@ -179,8 +172,9 @@ var pages=[AIPage(),PDPage(),CalvingPage(),TreatmentPage(),VaccinationPage(),Ope
           padding: const EdgeInsets.all(10.0),
 
           child:new Text(storeItems[index].itemName,style: new TextStyle(
-            fontSize: 17.5,
+            fontSize: 15,
             fontWeight: FontWeight.bold,
+
             color: Colors.black,
 
           ),) ,

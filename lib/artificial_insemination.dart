@@ -10,9 +10,51 @@ class AIPage extends StatefulWidget {
 }
 
 class _AIPageState extends State<AIPage> {
+  String name, profession, message;
+
+
   @override
   Widget build(BuildContext context) {
 
+
+    List<DropdownMenuItem<String>> items = [
+      new DropdownMenuItem(
+        child: new Text('First Time'),
+        value: 'First Time',
+      ),
+      new DropdownMenuItem(
+        child: new Text('Professor'),
+        value: 'Professor',
+      ),
+    ];
+
+
+
+    List<DropdownMenuItem<String>> item1 = [
+      new DropdownMenuItem(
+        child: new Text('engineer'),
+        value: 'Engineer'
+      ),
+      new DropdownMenuItem(
+        child: new Text('doctor'),
+        value: 'Professor',
+      ),
+    ];
+
+
+
+
+
+    List<DropdownMenuItem<String>> item2 = [
+      new DropdownMenuItem(
+        child: new Text('Student'),
+        value: 'Student',
+      ),
+      new DropdownMenuItem(
+        child: new Text('Professor'),
+        value: 'Professor',
+      ),
+    ];
 
     final aisemination = Padding(
       padding: EdgeInsets.symmetric(vertical: 5.0,horizontal: 10.0),
@@ -44,6 +86,13 @@ class _AIPageState extends State<AIPage> {
 
 
 
+
+
+
+
+
+
+
     final a2= Padding(
       padding: EdgeInsets.symmetric(vertical: 5.0,horizontal: 10.0),
 
@@ -54,6 +103,28 @@ class _AIPageState extends State<AIPage> {
         textAlign: TextAlign.left,
       ),
     );
+
+
+  final d1=
+
+    new DropdownButtonHideUnderline(
+    child: new DropdownButton(items: items, hint: new Text('Profession'),
+
+    value: profession,
+    onChanged: (String val) {
+    setState(() {
+    profession = val;
+
+    });
+
+    },
+    ));
+
+
+
+
+
+
 
 
     final a3= Padding(
@@ -69,6 +140,20 @@ class _AIPageState extends State<AIPage> {
 
 
 
+    final d2=
+
+    new DropdownButtonHideUnderline(
+        child: new DropdownButton(items: item1, hint: new Text('Profession'),
+
+          value: profession,
+          onChanged: (String val) {
+            setState(() {
+              profession = val;
+
+            });
+
+          },
+        ));
 
 
 
@@ -84,6 +169,24 @@ class _AIPageState extends State<AIPage> {
     );
 
 
+
+
+    final d3=
+
+    new DropdownButtonHideUnderline(
+        child: new DropdownButton(items: item2, hint: new Text('Profession'),
+
+          value: profession,
+          onChanged: (String val) {
+            setState(() {
+              profession = val;
+
+            });
+
+          },
+        ));
+
+
     final a5= Padding(
       padding: EdgeInsets.symmetric(vertical: 5.0,horizontal: 10.0),
 
@@ -95,6 +198,23 @@ class _AIPageState extends State<AIPage> {
       ),
     );
 
+
+
+
+    final d4=
+
+    new DropdownButtonHideUnderline(
+        child: new DropdownButton(items: items, hint: new Text('Profession'),
+
+          value: profession,
+          onChanged: (String val) {
+            setState(() {
+              profession = val;
+
+            });
+
+          },
+        ));
 
     final a6= Padding(
       padding: EdgeInsets.symmetric(vertical: 5.0,horizontal: 10.0),
@@ -108,6 +228,22 @@ class _AIPageState extends State<AIPage> {
     );
 
 
+    final d5=
+
+    new DropdownButtonHideUnderline(
+        child: new DropdownButton(items: items, hint: new Text('Profession'),
+
+          value: profession,
+          onChanged: (String val) {
+            setState(() {
+              profession = val;
+
+            });
+
+          },
+        ));
+
+
     final a7= Padding(
       padding: EdgeInsets.symmetric(vertical: 5.0,horizontal: 10.0),
 
@@ -119,6 +255,22 @@ class _AIPageState extends State<AIPage> {
       ),
     );
 
+
+
+    final d6=
+
+    new DropdownButtonHideUnderline(
+        child: new DropdownButton(items: items, hint: new Text('Profession'),
+
+          value: profession,
+          onChanged: (String val) {
+            setState(() {
+              profession = val;
+
+            });
+
+          },
+        ));
 
 
     final a8= Padding(
@@ -167,24 +319,52 @@ class _AIPageState extends State<AIPage> {
           shrinkWrap: true,
           padding: EdgeInsets.only(left: 54.0, right: 54.0),
           children: <Widget>[
+
             aisemination,
             SizedBox(height: 10.0),
+
             a1,
             SizedBox(height: 10.0),
+
             a2,
             SizedBox(height: 10.0),
+
+            d1,
+            SizedBox(height: 10.0),
+
             a3,
             SizedBox(height: 10.0),
+
+            d2,
+            SizedBox(height: 10.0),
+
             a4,
             SizedBox(height: 10.0),
+
+            d3,
+            SizedBox(height: 10.0),
+
             a5,
             SizedBox(height: 10.0),
+
+            d4,
+            SizedBox(height: 10.0),
+
             a6,
             SizedBox(height: 10.0),
+
+            d5,
+            SizedBox(height: 10.0),
+
             a7,
             SizedBox(height: 10.0),
+
+            d6,
+            SizedBox(height: 10.0),
+
             a8,
             SizedBox(height: 10.0),
+
             saveButton,
             SizedBox(height: 10.0),
 
