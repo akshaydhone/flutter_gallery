@@ -7,6 +7,7 @@ class PostmortemPage extends StatefulWidget {
 }
 
 class _PostmortemPageState extends State<PostmortemPage> {
+  String message,name,profession;
   @override
   Widget build(BuildContext context) {
 
@@ -130,6 +131,138 @@ class _PostmortemPageState extends State<PostmortemPage> {
     );
 
 
+    final a9=
+    new TextFormField(
+      decoration: new InputDecoration(hintText: 'Bank name',filled: true,fillColor: Colors.lightBlueAccent, border: new OutlineInputBorder(
+        borderRadius: const BorderRadius.all(
+          const Radius.circular(10.0),
+        ),
+      ),),
+      //keyboardType: TextInputType.number,
+      onSaved: (val) {
+        message = val;
+      },
+      //validator: validateMessage,
+      maxLines: 1,
+      //maxLength: 256,
+    );
+
+    final a10=
+    new TextFormField(
+      decoration: new InputDecoration(hintText: 'Tata',filled: true,fillColor: Colors.lightBlueAccent, border: new OutlineInputBorder(
+        borderRadius: const BorderRadius.all(
+          const Radius.circular(10.0),
+        ),
+      ),),
+      //keyboardType: TextInputType.number,
+      onSaved: (val) {
+        message = val;
+      },
+      //validator: validateMessage,
+      maxLines: 1,
+      //maxLength: 256,
+    );
+
+
+    final a11=
+    new TextFormField(
+      decoration: new InputDecoration(hintText: 'Inc123',filled: true,fillColor: Colors.lightBlueAccent, border: new OutlineInputBorder(
+        borderRadius: const BorderRadius.all(
+          const Radius.circular(10.0),
+        ),
+      ),),
+      //keyboardType: TextInputType.number,
+      onSaved: (val) {
+        message = val;
+      },
+      //validator: validateMessage,
+      maxLines: 1,
+      //maxLength: 256,
+    );
+
+    final a12=
+    new TextFormField(
+      decoration: new InputDecoration(hintText: '10-june-2019',filled: true,fillColor: Colors.lightBlueAccent, border: new OutlineInputBorder(
+        borderRadius: const BorderRadius.all(
+          const Radius.circular(10.0),
+        ),
+      ),),
+      keyboardType: TextInputType.number,
+      onSaved: (val) {
+        message = val;
+      },
+      //validator: validateMessage,
+      maxLines: 1,
+      //maxLength: 256,
+    );
+
+
+    final a13=
+    new TextFormField(
+      decoration: new InputDecoration(hintText: 'Time',filled: true,fillColor: Colors.lightBlueAccent, border: new OutlineInputBorder(
+        borderRadius: const BorderRadius.all(
+          const Radius.circular(10.0),
+        ),
+      ),),
+      //keyboardType: TextInputType.number,
+      onSaved: (val) {
+        message = val;
+      },
+      //validator: validateMessage,
+      maxLines: 1,
+      //maxLength: 256,
+    );
+
+
+    final a14=
+    new TextFormField(
+      decoration: new InputDecoration(hintText: 'Time',filled: true,fillColor: Colors.lightBlueAccent, border: new OutlineInputBorder(
+        borderRadius: const BorderRadius.all(
+          const Radius.circular(10.0),
+        ),
+      ),),
+      //keyboardType: TextInputType.number,
+      onSaved: (val) {
+        message = val;
+      },
+      //validator: validateMessage,
+      maxLines: 1,
+      //maxLength: 256,
+    );
+
+
+    final a15=
+    new TextFormField(
+      decoration: new InputDecoration(hintText: 'Death Cause',filled: true,fillColor: Colors.lightBlueAccent, border: new OutlineInputBorder(
+        borderRadius: const BorderRadius.all(
+          const Radius.circular(10.0),
+        ),
+      ),),
+      //keyboardType: TextInputType.number,
+      onSaved: (val) {
+        message = val;
+      },
+      //validator: validateMessage,
+      maxLines: 1,
+      //maxLength: 256,
+    );
+
+
+    final a16=
+    new TextFormField(
+      decoration: new InputDecoration(hintText: 'Ex:₹100',filled: true,fillColor: Colors.lightBlueAccent, border: new OutlineInputBorder(
+        borderRadius: const BorderRadius.all(
+          const Radius.circular(10.0),
+        ),
+      ),),
+      keyboardType: TextInputType.number,
+      onSaved: (val) {
+        message = val;
+      },
+      //validator: validateMessage,
+      maxLines: 1,
+      //maxLength: 256,
+    );
 
 
 
@@ -168,20 +301,44 @@ class _PostmortemPageState extends State<PostmortemPage> {
             SizedBox(height: 10.0),
             a1,
             SizedBox(height: 10.0),
+            a9,
+            SizedBox(height: 10.0),
+
             a2,
             SizedBox(height: 10.0),
+            a10,
+            SizedBox(height: 10.0),
+
             a3,
             SizedBox(height: 10.0),
+            a11,
+            SizedBox(height: 10.0),
+
             a4,
             SizedBox(height: 10.0),
+            a12,
+            SizedBox(height: 10.0),
+
             a5,
             SizedBox(height: 10.0),
+            a13,
+            SizedBox(height: 10.0),
+
             a6,
             SizedBox(height: 10.0),
+            a14,
+            SizedBox(height: 10.0),
+
             a7,
             SizedBox(height: 10.0),
+            a15,
+            SizedBox(height: 10.0),
+
             a8,
             SizedBox(height: 10.0),
+            a16,
+            SizedBox(height: 10.0),
+
             saveButton,
             SizedBox(height: 10.0),
 

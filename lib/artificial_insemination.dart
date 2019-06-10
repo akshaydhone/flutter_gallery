@@ -10,7 +10,7 @@ class AIPage extends StatefulWidget {
 }
 
 class _AIPageState extends State<AIPage> {
-  String name, profession, message;
+  String name, profession,profession1,profession2,profession3,profession4,profession5, message;
 
 
   @override
@@ -23,21 +23,21 @@ class _AIPageState extends State<AIPage> {
         value: 'First Time',
       ),
       new DropdownMenuItem(
-        child: new Text('Professor'),
-        value: 'Professor',
+        child: new Text('Second time'),
+        value: 'Second time',
       ),
     ];
 
 
 
-    List<DropdownMenuItem<String>> item1 = [
+    List<DropdownMenuItem<String>> items1 = [
       new DropdownMenuItem(
-        child: new Text('engineer'),
-        value: 'Professor'
+        child: new Text('B101'),
+        value: 'B101'
       ),
       new DropdownMenuItem(
-        child: new Text('doctor'),
-        value: 'Professor',
+        child: new Text('B102'),
+        value: 'B102',
       ),
     ];
 
@@ -45,14 +45,57 @@ class _AIPageState extends State<AIPage> {
 
 
 
-    List<DropdownMenuItem<String>> item2 = [
+    List<DropdownMenuItem<String>> items2 = [
       new DropdownMenuItem(
-        child: new Text('Student'),
-        value: 'Student',
+        child: new Text('InMilk'),
+        value: 'InMilk',
       ),
       new DropdownMenuItem(
-        child: new Text('Professor'),
-        value: 'Professor',
+        child: new Text('Out Of Milk'),
+        value: 'Out Of Milk',
+      ),
+    ];
+
+
+
+
+
+    List<DropdownMenuItem<String>> items3 = [
+      new DropdownMenuItem(
+        child: new Text('Fresh'),
+        value: 'Fresh',
+      ),
+      new DropdownMenuItem(
+        child: new Text('Non-Fresh'),
+        value: 'Non-Fresh',
+      ),
+    ];
+
+
+
+
+    List<DropdownMenuItem<String>> items4 = [
+      new DropdownMenuItem(
+        child: new Text('Mid'),
+        value: 'Mid',
+      ),
+      new DropdownMenuItem(
+        child: new Text('Advanced'),
+        value: 'Advanced',
+      ),
+    ];
+
+
+
+
+    List<DropdownMenuItem<String>> items5 = [
+      new DropdownMenuItem(
+        child: new Text('1012'),
+        value: '1012',
+      ),
+      new DropdownMenuItem(
+        child: new Text('1013'),
+        value: '1013',
       ),
     ];
 
@@ -108,7 +151,7 @@ class _AIPageState extends State<AIPage> {
   final d1=
 
     new DropdownButtonHideUnderline(
-    child: new DropdownButton(items: items, hint: new Text('Profession'),
+    child: new DropdownButton(items: items, hint: new Text('Select'),
 
     value: profession,
     onChanged: (String val) {
@@ -143,12 +186,12 @@ class _AIPageState extends State<AIPage> {
     final d2=
 
     new DropdownButtonHideUnderline(
-        child: new DropdownButton(items: item1, hint: new Text('Profession'),
+        child: new DropdownButton(items: items1, hint: new Text('Select'),
 
-          value: profession,
+          value: profession1,
           onChanged: (String val) {
             setState(() {
-              profession = val;
+              profession1 = val;
 
             });
 
@@ -174,12 +217,12 @@ class _AIPageState extends State<AIPage> {
     final d3=
 
     new DropdownButtonHideUnderline(
-        child: new DropdownButton(items: item2, hint: new Text('Profession'),
+        child: new DropdownButton(items: items2, hint: new Text('Select'),
 
-          value: profession,
+          value: profession2,
           onChanged: (String val) {
             setState(() {
-              profession = val;
+              profession2 = val;
 
             });
 
@@ -204,12 +247,12 @@ class _AIPageState extends State<AIPage> {
     final d4=
 
     new DropdownButtonHideUnderline(
-        child: new DropdownButton(items: items, hint: new Text('Profession'),
+        child: new DropdownButton(items: items3, hint: new Text('Select'),
 
-          value: profession,
+          value: profession3,
           onChanged: (String val) {
             setState(() {
-              profession = val;
+              profession3 = val;
 
             });
 
@@ -231,12 +274,12 @@ class _AIPageState extends State<AIPage> {
     final d5=
 
     new DropdownButtonHideUnderline(
-        child: new DropdownButton(items: items, hint: new Text('Profession'),
+        child: new DropdownButton(items: items4, hint: new Text('Select'),
 
-          value: profession,
+          value: profession4,
           onChanged: (String val) {
             setState(() {
-              profession = val;
+              profession4 = val;
 
             });
 
@@ -260,12 +303,12 @@ class _AIPageState extends State<AIPage> {
     final d6=
 
     new DropdownButtonHideUnderline(
-        child: new DropdownButton(items: items, hint: new Text('Profession'),
+        child: new DropdownButton(items: items5, hint: new Text('Select'),
 
-          value: profession,
+          value: profession5,
           onChanged: (String val) {
             setState(() {
-              profession = val;
+              profession5 = val;
 
             });
 
