@@ -33,7 +33,7 @@ class _AIPageState extends State<AIPage> {
     List<DropdownMenuItem<String>> item1 = [
       new DropdownMenuItem(
         child: new Text('engineer'),
-        value: 'Engineer'
+        value: 'Professor'
       ),
       new DropdownMenuItem(
         child: new Text('doctor'),
@@ -284,7 +284,20 @@ class _AIPageState extends State<AIPage> {
       ),
     );
 
-
+final a9=
+    new TextFormField(
+      decoration: new InputDecoration(hintText: 'AI is done',filled: true,fillColor: Colors.lightBlueAccent, border: new OutlineInputBorder(
+        borderRadius: const BorderRadius.all(
+          const Radius.circular(10.0),
+        ),
+      ),),
+      onSaved: (val) {
+        message = val;
+      },
+      //validator: validateMessage,
+      maxLines: 1,
+      //maxLength: 256,
+    );
 
 
 
@@ -363,6 +376,11 @@ class _AIPageState extends State<AIPage> {
             SizedBox(height: 10.0),
 
             a8,
+            SizedBox(height: 10.0),
+
+
+
+            a9,
             SizedBox(height: 10.0),
 
             saveButton,
