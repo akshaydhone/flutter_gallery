@@ -10,6 +10,30 @@ class OperationPage extends StatefulWidget {
 }
 
 class _OperationPageState extends State<OperationPage> {
+  String name,profession,message;
+  List<DropdownMenuItem<String>> items = [
+    new DropdownMenuItem(
+      child: new Text('Heart'),
+      value: 'Heart',
+    ),
+    new DropdownMenuItem(
+      child: new Text('other'),
+      value: 'other',
+    ),
+  ];
+
+
+
+  List<DropdownMenuItem<String>> items1 = [
+    new DropdownMenuItem(
+      child: new Text('Heart'),
+      value: 'Heart',
+    ),
+    new DropdownMenuItem(
+      child: new Text('other'),
+      value: 'other',
+    ),
+  ];
   @override
   Widget build(BuildContext context) {
 
@@ -122,8 +146,124 @@ class _OperationPageState extends State<OperationPage> {
 
 
 
+    final a8=
+    new TextFormField(
+      decoration: new InputDecoration(hintText: 'Date',filled: true,fillColor: Colors.lightBlueAccent, border: new OutlineInputBorder(
+        borderRadius: const BorderRadius.all(
+          const Radius.circular(10.0),
+        ),
+      ),),
+      keyboardType: TextInputType.number,
+      onSaved: (val) {
+        message = val;
+      },
+      //validator: validateMessage,
+      maxLines: 1,
+      //maxLength: 256,
+    );
 
 
+
+
+
+
+    final a9=
+    new TextFormField(
+      decoration: new InputDecoration(hintText: 'Duration in days',filled: true,fillColor: Colors.lightBlueAccent, border: new OutlineInputBorder(
+        borderRadius: const BorderRadius.all(
+          const Radius.circular(10.0),
+        ),
+      ),),
+      keyboardType: TextInputType.number,
+      onSaved: (val) {
+        message = val;
+      },
+      //validator: validateMessage,
+      maxLines: 1,
+      //maxLength: 256,
+    );
+
+
+
+
+    final a10= new DropdownButtonHideUnderline(
+        child: new DropdownButton(items: items, hint: new Text('Select'),
+          value: profession,
+          onChanged: (String val) {
+            setState(() {
+              profession = val;
+            });
+          },
+        ));
+
+
+
+    final a11=
+    new DropdownButtonHideUnderline(
+        child: new DropdownButton(items: items1, hint: new Text('Select'),
+          value: name,
+          onChanged: (String val) {
+            setState(() {
+              name = val;
+            });
+          },
+        ));
+
+
+
+
+
+    final a12=
+    new TextFormField(
+      decoration: new InputDecoration(hintText: 'Mention Disease',filled: true,fillColor: Colors.lightBlueAccent, border: new OutlineInputBorder(
+        borderRadius: const BorderRadius.all(
+          const Radius.circular(10.0),
+        ),
+      ),),
+      //keyboardType: TextInputType.number,
+      onSaved: (val) {
+        message = val;
+      },
+      //validator: validateMessage,
+      maxLines: 1,
+      //maxLength: 256,
+    );
+
+
+
+
+    final a13=
+    new TextFormField(
+      decoration: new InputDecoration(hintText: 'Symptoms',filled: true,fillColor: Colors.lightBlueAccent, border: new OutlineInputBorder(
+        borderRadius: const BorderRadius.all(
+          const Radius.circular(10.0),
+        ),
+      ),),
+      //keyboardType: TextInputType.number,
+      onSaved: (val) {
+        message = val;
+      },
+      //validator: validateMessage,
+      maxLines: 1,
+      //maxLength: 256,
+    );
+
+
+    final a14=
+    new TextFormField(
+      decoration: new InputDecoration(hintText: 'Precautions',filled: true,fillColor: Colors.lightBlueAccent, border: new OutlineInputBorder(
+        borderRadius: const BorderRadius.all(
+          const Radius.circular(10.0),
+        ),
+      ),),
+      //keyboardType: TextInputType.number,
+      onSaved: (val) {
+        message = val;
+      },
+      //validator: validateMessage,
+      maxLines: 1,
+      //maxLength: 256,
+    );
 
     final saveButton = Padding(
 
@@ -160,17 +300,41 @@ class _OperationPageState extends State<OperationPage> {
             SizedBox(height: 10.0),
             a1,
             SizedBox(height: 10.0),
+            a8,
+            SizedBox(height: 10.0),
+
             a2,
             SizedBox(height: 10.0),
+            a9,
+            SizedBox(height: 10.0),
+
+
             a3,
             SizedBox(height: 10.0),
+            a10,
+            SizedBox(height: 10.0),
+
             a4,
             SizedBox(height: 10.0),
+            a11,
+            SizedBox(height: 10.0),
+
+
             a5,
             SizedBox(height: 10.0),
+            a12,
+            SizedBox(height: 10.0),
+
+
             a6,
             SizedBox(height: 10.0),
+            a13,
+            SizedBox(height: 10.0),
+
+
             a7,
+            SizedBox(height: 10.0),
+            a14,
             SizedBox(height: 10.0),
 
             saveButton,

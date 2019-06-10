@@ -17,6 +17,7 @@ class DehorningPage extends StatefulWidget {
 
 
 class _DehorningPageState extends State<DehorningPage> {
+  String message,profession,name;
   @override
   Widget build(BuildContext context) {
     final pregnancydiagnosis = Padding(
@@ -109,10 +110,105 @@ class _DehorningPageState extends State<DehorningPage> {
       ),
     );
 
+    final a7=
+    new TextFormField(
+      decoration: new InputDecoration(hintText: '10-06-2019',filled: true,fillColor: Colors.lightBlueAccent, border: new OutlineInputBorder(
+        borderRadius: const BorderRadius.all(
+          const Radius.circular(10.0),
+        ),
+      ),),
+      keyboardType: TextInputType.number,
+      onSaved: (val) {
+        message = val;
+      },
+      //validator: validateMessage,
+      maxLines: 1,
+      //maxLength: 256,
+    );
+
+    final a8=
+    new TextFormField(
+      decoration: new InputDecoration(hintText: 'Date',filled: true,fillColor: Colors.lightBlueAccent, border: new OutlineInputBorder(
+        borderRadius: const BorderRadius.all(
+          const Radius.circular(10.0),
+        ),
+      ),),
+      keyboardType: TextInputType.number,
+      onSaved: (val) {
+        message = val;
+      },
+      //validator: validateMessage,
+      maxLines: 1,
+      //maxLength: 256,
+    );
 
 
+    final a9=
+    new TextFormField(
+      decoration: new InputDecoration(hintText: 'Age',filled: true,fillColor: Colors.lightBlueAccent, border: new OutlineInputBorder(
+        borderRadius: const BorderRadius.all(
+          const Radius.circular(10.0),
+        ),
+      ),),
+      keyboardType: TextInputType.number,
+      onSaved: (val) {
+        message = val;
+      },
+      //validator: validateMessage,
+      maxLines: 1,
+      //maxLength: 256,
+    );
 
 
+    final a10=
+    new TextFormField(
+      decoration: new InputDecoration(hintText: 'Ex:₹100',filled: true,fillColor: Colors.lightBlueAccent, border: new OutlineInputBorder(
+        borderRadius: const BorderRadius.all(
+          const Radius.circular(10.0),
+        ),
+      ),),
+      keyboardType: TextInputType.number,
+      onSaved: (val) {
+        message = val;
+      },
+      //validator: validateMessage,
+      maxLines: 1,
+      //maxLength: 256,
+    );
+
+
+    final a11=
+    new TextFormField(
+      decoration: new InputDecoration(hintText: 'Ex:₹50',filled: true,fillColor: Colors.lightBlueAccent, border: new OutlineInputBorder(
+        borderRadius: const BorderRadius.all(
+          const Radius.circular(10.0),
+        ),
+      ),),
+      keyboardType: TextInputType.number,
+      onSaved: (val) {
+        message = val;
+      },
+      //validator: validateMessage,
+      maxLines: 1,
+      //maxLength: 256,
+    );
+
+
+    final a12=
+    new TextFormField(
+      decoration: new InputDecoration(hintText: 'Ex:₹100',filled: true,fillColor: Colors.lightBlueAccent, border: new OutlineInputBorder(
+        borderRadius: const BorderRadius.all(
+          const Radius.circular(10.0),
+        ),
+      ),),
+      keyboardType: TextInputType.number,
+      onSaved: (val) {
+        message = val;
+      },
+      //validator: validateMessage,
+      maxLines: 1,
+      //maxLength: 256,
+    );
 
 
 
@@ -150,15 +246,32 @@ class _DehorningPageState extends State<DehorningPage> {
             SizedBox(height: 10.0),
             a1,
             SizedBox(height: 10.0),
+            a7,
+            SizedBox(height: 10.0),
+
             a2,
             SizedBox(height: 10.0),
+            a8,
+            SizedBox(height: 10.0),
+
             a3,
             SizedBox(height: 10.0),
+            a9,
+            SizedBox(height: 10.0),
+
             a4,
             SizedBox(height: 10.0),
+            a10,
+            SizedBox(height: 10.0),
+
             a5,
             SizedBox(height: 10.0),
+            a11,
+            SizedBox(height: 10.0),
+
             a6,
+            SizedBox(height: 10.0),
+            a12,
             SizedBox(height: 10.0),
             saveButton,
             SizedBox(height: 10.0),
