@@ -61,6 +61,8 @@ class _CalvingPageState extends State<CalvingPage> {
 
 
     final a6=
+
+
     new TextFormField(
       decoration: new InputDecoration(hintText: 'Date',filled: true,fillColor: Colors.lightBlueAccent, border: new OutlineInputBorder(
         borderRadius: const BorderRadius.all(
@@ -230,6 +232,22 @@ final a7=
     );
 
 
+    final z1 = Padding(
+      padding: EdgeInsets.symmetric(vertical: 5.0,horizontal: 10.0,),
+
+
+
+      child: Text(
+
+        '© DSK Milkotronics Pvt Ltd.',
+        style: TextStyle(fontSize: 20.0, color: Colors.white,fontWeight: FontWeight.bold,backgroundColor: Colors.lightBlueAccent,),
+
+        textAlign: TextAlign.center,
+
+
+      ),
+    );
+
     final saveButton = Padding(
 
       padding: EdgeInsets.symmetric(vertical: 16.0,horizontal: 60.0),
@@ -292,6 +310,12 @@ final a7=
 
             saveButton,
             SizedBox(height: 10.0),
+
+            z1,
+            SizedBox(height: 10.0),
+
+
+
 
 
 

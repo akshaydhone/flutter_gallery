@@ -120,6 +120,23 @@ class _VaccinationPageState extends State<VaccinationPage> {
 
 
 
+
+    final z1 = Padding(
+      padding: EdgeInsets.symmetric(vertical: 5.0,horizontal: 10.0,),
+
+
+
+      child: Text(
+
+        '© DSK Milkotronics Pvt Ltd.',
+        style: TextStyle(fontSize: 20.0, color: Colors.white,fontWeight: FontWeight.bold,backgroundColor: Colors.lightBlueAccent,),
+
+        textAlign: TextAlign.center,
+
+
+      ),
+    );
+
     final a10=
     new TextFormField(
       decoration: new InputDecoration(hintText: 'Ex:₹200',filled: true,fillColor: Colors.lightBlueAccent, border: new OutlineInputBorder(
@@ -142,7 +159,7 @@ class _VaccinationPageState extends State<VaccinationPage> {
       child: Text(
 
         'Medicine Charge',
-        style: TextStyle(fontSize: 23.0, color: Colors.black,fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 23.0, color: Colors.black,fontWeight: FontWeight.bold,),
         textAlign: TextAlign.left,
       ),
     );
@@ -255,6 +272,10 @@ class _VaccinationPageState extends State<VaccinationPage> {
 
 
             saveButton,
+            SizedBox(height: 10.0),
+
+
+            z1,
             SizedBox(height: 10.0),
 
 

@@ -8,8 +8,12 @@ class PostmortemPage extends StatefulWidget {
 
 class _PostmortemPageState extends State<PostmortemPage> {
   String message,name,profession;
+
+
   @override
   Widget build(BuildContext context) {
+
+
 
 
     final aisemination = Padding(
@@ -133,11 +137,13 @@ class _PostmortemPageState extends State<PostmortemPage> {
 
     final a9=
     new TextFormField(
-      decoration: new InputDecoration(hintText: 'Bank name',filled: true,fillColor: Colors.lightBlueAccent, border: new OutlineInputBorder(
-        borderRadius: const BorderRadius.all(
-          const Radius.circular(10.0),
+      decoration:
+      new InputDecoration(
+        hintText: 'Bank name',filled: true,fillColor: Colors.lightBlueAccent, border: new OutlineInputBorder(
+        borderRadius: const BorderRadius.all(const Radius.circular(10.0),
         ),
-      ),),
+      ),
+      ),
       //keyboardType: TextInputType.number,
       onSaved: (val) {
         message = val;
@@ -266,6 +272,24 @@ class _PostmortemPageState extends State<PostmortemPage> {
 
 
 
+    final z1 = Padding(
+      padding: EdgeInsets.symmetric(vertical: 5.0,horizontal: 10.0,),
+
+
+
+      child: Text(
+
+        '© DSK Milkotronics Pvt Ltd.',
+        style: TextStyle(fontSize: 20.0, color: Colors.white,fontWeight: FontWeight.bold,backgroundColor: Colors.lightBlueAccent,),
+
+        textAlign: TextAlign.center,
+
+
+      ),
+    );
+
+
+
     final saveButton = Padding(
 
       padding: EdgeInsets.symmetric(vertical: 16.0,horizontal: 60.0),
@@ -340,6 +364,10 @@ class _PostmortemPageState extends State<PostmortemPage> {
             SizedBox(height: 10.0),
 
             saveButton,
+            SizedBox(height: 10.0),
+
+
+            z1,
             SizedBox(height: 10.0),
 
 

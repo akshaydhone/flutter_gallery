@@ -135,7 +135,21 @@ class _SamplingPageState extends State<SamplingPage> {
     );
 
 
+    final z1 = Padding(
+      padding: EdgeInsets.symmetric(vertical: 5.0,horizontal: 10.0,),
 
+
+
+      child: Text(
+
+        '© DSK Milkotronics Pvt Ltd.',
+        style: TextStyle(fontSize: 20.0, color: Colors.white,fontWeight: FontWeight.bold,backgroundColor: Colors.lightBlueAccent,),
+
+        textAlign: TextAlign.center,
+
+
+      ),
+    );
 
 
     final a8=
@@ -291,6 +305,10 @@ class _SamplingPageState extends State<SamplingPage> {
 
 
             saveButton,
+            SizedBox(height: 10.0),
+
+
+            z1,
             SizedBox(height: 10.0),
 
 

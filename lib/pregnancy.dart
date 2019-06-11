@@ -59,10 +59,14 @@ class _PDPageState extends State<PDPage> {
 
 
     final a7=
+
     new TextFormField(
-      decoration: new InputDecoration(hintText: 'Date',filled: true,fillColor: Colors.lightBlueAccent, border: new OutlineInputBorder(
+      //textAlign: TextAlign.center,
+
+
+      decoration: new InputDecoration(hintText: 'Date',filled: true,fillColor: Colors.lightBlueAccent,border: new OutlineInputBorder(
         borderRadius: const BorderRadius.all(
-          const Radius.circular(10.0),
+          const Radius.circular(10.0)
         ),
       ),),
         keyboardType: TextInputType.number,
@@ -75,6 +79,23 @@ class _PDPageState extends State<PDPage> {
     );
 
 
+
+
+    final z1 = Padding(
+      padding: EdgeInsets.symmetric(vertical: 5.0,horizontal: 10.0,),
+
+
+
+      child: Text(
+
+        '© DSK Milkotronics Pvt Ltd.',
+        style: TextStyle(fontSize: 20.0, color: Colors.white,fontWeight: FontWeight.bold,backgroundColor: Colors.lightBlueAccent,),
+
+        textAlign: TextAlign.center,
+
+
+      ),
+    );
     final a2= Padding(
       padding: EdgeInsets.symmetric(vertical: 5.0,horizontal: 10.0),
 
@@ -315,6 +336,10 @@ final a8=
             SizedBox(height: 10.0),
 
             saveButton,
+            SizedBox(height: 10.0),
+
+
+            z1,
             SizedBox(height: 10.0),
 
 

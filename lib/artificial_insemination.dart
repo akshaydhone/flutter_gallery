@@ -342,7 +342,21 @@ final a9=
       //maxLength: 256,
     );
 
+    final a10 = Padding(
+      padding: EdgeInsets.symmetric(vertical: 5.0,horizontal: 10.0,),
 
+
+
+      child: Text(
+
+        '© DSK Milkotronics Pvt Ltd.',
+        style: TextStyle(fontSize: 20.0, color: Colors.white,fontWeight: FontWeight.bold,backgroundColor: Colors.lightBlueAccent,),
+
+        textAlign: TextAlign.center,
+
+
+      ),
+    );
 
     final saveButton = Padding(
 
@@ -426,7 +440,10 @@ final a9=
             a9,
             SizedBox(height: 10.0),
 
+
             saveButton,
+            SizedBox(height: 10.0),
+            a10,
             SizedBox(height: 10.0),
 
 

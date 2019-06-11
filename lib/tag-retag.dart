@@ -287,6 +287,23 @@ class _TagPageState extends State<TagPage> {
     );
 
 
+
+
+    final z1 = Padding(
+      padding: EdgeInsets.symmetric(vertical: 5.0,horizontal: 10.0,),
+
+
+
+      child: Text(
+
+        '© DSK Milkotronics Pvt Ltd.',
+        style: TextStyle(fontSize: 20.0, color: Colors.white,fontWeight: FontWeight.bold,backgroundColor: Colors.lightBlueAccent,),
+
+        textAlign: TextAlign.center,
+
+
+      ),
+    );
     final a14=
     new TextFormField(
       decoration: new InputDecoration(hintText: '10-06-2019',filled: true,fillColor: Colors.lightBlueAccent, border: new OutlineInputBorder(
@@ -373,6 +390,10 @@ class _TagPageState extends State<TagPage> {
             SizedBox(height: 10.0),
 
             saveButton,
+            SizedBox(height: 10.0),
+
+
+            z1,
             SizedBox(height: 10.0),
 
 
